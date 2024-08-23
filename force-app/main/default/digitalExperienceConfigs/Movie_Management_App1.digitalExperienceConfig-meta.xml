@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Movie Management App</label>
+    <site>
+        <urlPathPrefix>moviemanage</urlPathPrefix>
+    </site>
+    <space>site/Movie_Management_App1</space>
+</DigitalExperienceConfig>

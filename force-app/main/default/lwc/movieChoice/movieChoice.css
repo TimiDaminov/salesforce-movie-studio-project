@@ -1,0 +1,119 @@
+
+.slds-box {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.slds-text-heading_medium {
+    font-size: 1.75rem;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #0070d2;
+    padding-bottom: 10px;
+}
+
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.movie-card {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.movie-poster {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 2px solid #0070d2;
+}
+
+
+.movie-details {
+    text-align: center;
+}
+
+
+.movie-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #0070d2;
+    margin-bottom: 8px;
+}
+
+
+.movie-rating {
+    font-size: 1rem;
+    color: #f39c12;
+    margin-bottom: 12px;
+}
+
+.movie-overview {
+    font-size: 0.875rem;
+    color: #555555;
+    margin-bottom: 16px;
+}
+
+
+.select-button {
+    background-color: #0070d2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    width: 100%;
+}
+
+.select-button:hover {
+    background-color: #005fb2;
+    transform: scale(1.05);
+}
+
+.select-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 112, 210, 0.5);
+}
+
+
+.error-message {
+    color: #d9534f;
+    font-size: 0.875rem;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.success-message {
+    color: #5bc0de;
+    font-size: 0.875rem;
+    margin-top: 16px;
+    font-weight: 500;
+}

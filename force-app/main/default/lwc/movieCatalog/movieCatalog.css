@@ -1,0 +1,79 @@
+
+.catalog-container {
+    padding: 1rem;
+    background-color: #f4f6f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section,
+.limit-section {
+    margin-bottom: 1rem;
+}
+
+.filter-section label,
+.limit-section label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.genre,
+.movieLimit {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.genre:focus,
+.movieLimit:focus {
+    border-color: #0070d2;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 112, 208, 0.2);
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.slds-button {
+    background-color: #0070d2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.slds-button:hover {
+    background-color: #005fb2;
+}
+
+.slds-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 112, 208, 0.5);
+}
+
+c-movie-card {
+    margin: 0;
+}

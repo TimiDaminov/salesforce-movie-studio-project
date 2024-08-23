@@ -1,0 +1,34 @@
+<template>
+    <div class="catalog-container">
+        <div class="filter-section">
+            <label for="genre">Filter by Genre:</label>
+            <select id="genre" name="genre" class="genre" onchange={handleFilterChange}>
+                <option value="">--Select Genre--</option>
+                <template for:each={genres} for:item="genre">
+                    <option key={genre.value} value={genre.value}>{genre.label}</option>
+                </template>
+            </select>
+        </div>
+
+        <div class="limit-section">
+            <label for="movieLimit">Number of Movies to Display:</label>
+            <input type="number" id="movieLimit" class="movieLimit" name="movieLimit" min="1" value={movieLimit} onchange={handleLimitChange} />
+        </div>
+
+        <div class="movie-grid">
+            <template if:true={filteredMovies.length}>
+                <template for:each={filteredMovies} for:item="movie">
+                    <c-movie-card key={movie.Id} movie={movie}></c-movie-card>
+                </template>
+            </template>
+            <template if:false={filteredMovies.length}>
+                <p class="error-message">No movies found for the selected genre.</p>
+            </template>
+        </div>
+
+        <div class="pagination-controls">
+            <lightning-button label="Previous" onclick={handlePrevious}></lightning-button>
+            <lightning-button label="Next" onclick={handleNext}></lightning-button>
+        </div>
+    </div>
+</template>

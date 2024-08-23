@@ -1,0 +1,6 @@
+{
+  "apiName" : "Movie_Detail__c",
+  "type" : "sfdc_cms__route",
+  "parentId" : "sfdc_cms__route/Movie_Catalog__c",
+  "path" : "routes"
+}

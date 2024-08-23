@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Movie Related List",
+  "contentBody" : {
+    "activeViewId" : "Movie_Related_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "relatedlist-Movie__c",
+    "urlPrefix" : "movie"
+  }
+}

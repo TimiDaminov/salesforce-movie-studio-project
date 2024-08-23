@@ -1,0 +1,17 @@
+<template>
+    <div class="movie-card-container">    
+        <div class="details-button-container">
+            <lightning-button label="Details" onclick={handleDetailsClick} class="details-button"></lightning-button>
+        </div>
+        <img src={movie.Poster_URL__c} alt={movie.Title__c} class="movie-poster" />
+        <div class="movie-info">
+            <h3 class="movie-title">{movie.Title__c}</h3>
+            <p class="movie-genre">{movie.Genre__c}</p>
+            <p class="movie-rating">Rating: {movie.Rating__c}</p>
+            <p>{movie.tmdb_id__c}</p>
+            <template if:true={isHorror}>
+                <div class="age-rating-label">18+</div>
+            </template>
+        </div>
+    </div>
+</template>

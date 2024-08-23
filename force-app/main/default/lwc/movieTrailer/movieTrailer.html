@@ -1,0 +1,11 @@
+<template>
+    <template if:true={youtubeUrl}>
+        <iframe width="300" height="315" src={youtubeUrl} frameborder="0" allowfullscreen></iframe>
+    </template>
+    <template if:false={youtubeUrl}>
+        <p>No trailer available.</p>
+    </template>
+    <template if:true={error}>
+        <p>Error: {error.message}</p>
+    </template>
+</template>

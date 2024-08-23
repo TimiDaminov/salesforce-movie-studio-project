@@ -1,0 +1,31 @@
+<template>
+    <div class="slds-box">
+        <h1 class="slds-text-heading_medium">Select a Movie</h1>
+        
+        <template if:true={searchResults}>
+            <div class="slds-grid slds-wrap">
+                <template for:each={searchResults} for:item="movie">
+                    <div key={movie.id} class="slds-col slds-size_1-of-2 slds-p-around_small">
+                        <div class="movie-card">
+                            <img src={movie.posterUrl} alt="Movie Poster" class="movie-poster" />
+                            <div class="movie-details">
+                                <div class="movie-title">{movie.title}</div>
+                                <div class="movie-rating">Rating: {movie.vote_average}</div>
+                                <div class="movie-overview">{movie.overview}</div>
+                                <button class="slds-button slds-button_brand" data-movie-id={movie.id} data-movie-title={movie.title} data-movie-rating={movie.vote_average} data-movie-overview={movie.overview} onclick={handleSelectMovie}>Select Movie</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+
+        <template if:true={errorMessage}>
+            <div class="slds-text-color_error">{errorMessage}</div>
+        </template>
+
+        <template if:true={successMessage}>
+            <div class="slds-text-color_success">{successMessage}</div>
+        </template>
+    </div>
+</template>
